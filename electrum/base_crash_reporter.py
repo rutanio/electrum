@@ -41,7 +41,7 @@ class CrashReportResponse(NamedTuple):
 
 
 class BaseCrashReporter(Logger):
-    report_server = "https://crashhub.electrum.org"
+    report_server = "https://crashhub.rutanio.com"
     issue_template = """<h2>Traceback</h2>
 <pre>
 {traceback}

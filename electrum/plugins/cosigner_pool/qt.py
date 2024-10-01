@@ -124,7 +124,7 @@ class Plugin(BasePlugin):
         self.cosigner_wallets = {}  # type: Dict[Abstract_Wallet, CosignerWallet]
 
         transport = XMLRPCProxyTransport()
-        self.cosigner_service = ServerProxy('https://cosigner.electrum.org/', transport, allow_none=True, context=ssl_context)
+        self.cosigner_service = ServerProxy('https://cosigner.rutanio.com/', transport, allow_none=True, context=ssl_context)
 
     @hook
     def init_qt(self, gui: 'ElectrumGui'):
