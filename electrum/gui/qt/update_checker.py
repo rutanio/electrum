@@ -20,12 +20,11 @@ from electrum._vendor.distutils.version import StrictVersion
 
 
 class UpdateCheck(QDialog, Logger):
-    url = "https://electrum.org/version"
-    download_url = "https://electrum.org/#download"
+    url = "https://github.com/rutanio/Rutanio-Electrum-version/raw/master/version"
+    download_url = "https://github.com/rutanio/Rutanio-Electrum/releases/"    
 
     VERSION_ANNOUNCEMENT_SIGNING_KEYS = (
-        "13xjmVAB1EATPP8RshTE8S8sNwwSUM9p1P",  # ThomasV (since 3.3.4)
-        "1Nxgk6NTooV4qZsX5fdqQwrLjYcsQZAfTg",  # ghost43 (since 4.1.2)
+        "RUtX6UrzdR6yS4VmYva4reZbGfpjTXTnMx",  # Turcol
     )
 
     def __init__(self, *, latest_version=None):
